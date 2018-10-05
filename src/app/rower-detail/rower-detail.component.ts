@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Rower } from '../rower';
 
 @Component({
   selector: 'app-rower-detail',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rower-detail.component.css']
 })
 export class RowerDetailComponent implements OnInit {
-
+  @Input() rower: Rower;
   constructor() { }
 
   ngOnInit() {

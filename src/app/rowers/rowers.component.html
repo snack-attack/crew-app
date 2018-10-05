@@ -1,19 +1,11 @@
 <h2>Master Rowers</h2>
+
 <ul class="rowers">
   <li *ngFor="let rower of rowers" 
     [class.selected]="rower === selectedRower"
     (click)="onSelect(rower)">
-    <span class="badge">{{ rower.id }}</span>{{rower.name}}
+    <span class="badge">{{rower.id}}</span>{{rower.name}}
   </li>
 </ul>
 
-<div *ngIf="selectedRower">
-  <h2>{{selectedRower.name | uppercase}} Details</h2>
-  <div>
-    <span>id: </span>{{selectedRower.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedRower.name" placeholder="name">
-    </label>
-  </div>
-</div>
+<app-rower-detail [rower]="selectedRower"></app-rower-detail>
