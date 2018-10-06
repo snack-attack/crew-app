@@ -9,7 +9,7 @@ import { ROWERS } from '../mock-rowers';
 })
 export class RowersComponent implements OnInit {
   rowers = ROWERS;
-  selectedRower = Rower;
+  selectedRower: Rower;
   onSelect(rower: Rower): void {
     this.selectedRower = rower;
   }
