@@ -8,6 +8,7 @@ import { Rower } from '../rower';
 })
 export class RowerDetailComponent implements OnInit {
   @Input() rower: Rower;
+
   constructor() { }
 
   ngOnInit() {

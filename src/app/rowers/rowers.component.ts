@@ -10,12 +10,14 @@ import { ROWERS } from '../mock-rowers';
 export class RowersComponent implements OnInit {
   rowers = ROWERS;
   selectedRower: Rower;
-  onSelect(rower: Rower): void {
-    this.selectedRower = rower;
-  }
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(rower: Rower): void {
+    this.selectedRower = rower;
   }
 
 }
