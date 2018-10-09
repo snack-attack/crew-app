@@ -5,7 +5,7 @@ import { ROWERS } from '../mock-rowers';
 @Component({
   selector: 'app-rowers',
   templateUrl: './rowers.component.html',
-  styleUrls: ['./rowers.component.css']
+  styleUrls: ['./rowers.component.css'],
 })
 export class RowersComponent implements OnInit {
   rowers = ROWERS;
